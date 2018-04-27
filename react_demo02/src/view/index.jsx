@@ -15,7 +15,7 @@ class Home extends Component {
 
 
 const news = () => (
-    <h3>news page</h3>
+    <h3>news page123</h3>
 )
 
 export default Home
