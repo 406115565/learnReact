@@ -13,7 +13,6 @@ const CustomLinkExample = () => (
 			<hr />
 			<Route exact path="/" component={Home} />
 			<Route path="/about" component={About} />
-			<Test />
 		</div>
 	</Router>
 )
@@ -36,24 +35,5 @@ const About = () => (
 	<div>
 		<h2>About</h2>
 	</div>
-)
-
-const Test = () => (
-	<h2>
-		<MyLink name='leon' />
-		<MyLink name='pitt' />
-		<MyLink name='anni' />
-		<MyLink name='howard' />
-		<MyLink name='depp' />
-	</h2>
-)
-
-
-const MyLink = ({ name }) => (
-	<Route children={() => {
-		return (
-			<div><i>{name}</i></div>
-		)
-	}} />
 )
 export default CustomLinkExample
